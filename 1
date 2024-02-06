@@ -1,0 +1,23 @@
+###https://www.youtube.com/watch?v=CJF45YGXKXw&list=PLWs2dSJolpWKBCBPVymYBm0BM8VPksmLv
+
+
+#using floats
+interest1 = 0.04
+compounding = 365*24
+t=100 #years
+investment1 = 10e9 #one billion
+daily1 = 1 + interest1/compounding
+sum1 = investment1*(daily1**(compounding*t))
+print('Amount computed using naive computation: %0.20e'%sum1)
+
+#the same using precise decimal representation
+from decimal import *
+getcontext().prec = 100 #set precision of decimal calculations
+interest2 = Decimal(interest1)
+daily2 = 1 + interest2/compounding
+investment2 = Decimal(investment1)
+sum2 = investment2*(daily2**(compounding*t)) #using exact decimals
+print('Amount computed using exact computation: %0.20e'%sum2)
+
+diff=sum2-Decimal.from_float(sum1)
+print('The difference is: %0.10f'%diff)
