@@ -1,0 +1,54 @@
+####BASICS####
+
+#This is a comment
+#####################################################
+'''
+#Booleans
+x = False
+y = True               
+print(x and y)
+
+a = 2 < 5
+a = a and (6 < 9)
+print(a)
+
+#check is one of the conditions are satisfied
+t = (1 < 0)
+t = (2 >= 4)
+t = (5 <= 5)
+t = (2 > 0)
+print(t)
+'''
+########################################################
+
+#Integers
+import sys
+'''
+x = 3
+print("x is %r" % x)
+print("Type of x is %s" % type(x))
+
+y = 0b1011            #binary (base=2)
+# y = 0x10f  #hex (base=16)
+
+print("y is %r" % y)
+print("Type of y is %s" % type(y))
+print("y takes %d bytes in memory" % sys.getsizeof(y))          # .getsizeof returns amount of memory used
+'''
+
+'''
+      ###Biggest integer that can be stored
+u = 0b1111111111111111111111111111110
+#     1234567890123456789012345678901234567890
+u = 0x1afe
+print("u is %r" % u)
+print("Type of u is %s" % type(u))
+print("u takes %d bytes in memory" % sys.getsizeof(u))
+'''
+
+   ###Arithmetics with integers
+
+
+
+
+   
