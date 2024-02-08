@@ -37,18 +37,23 @@ print("y takes %d bytes in memory" % sys.getsizeof(y))          # .getsizeof ret
 '''
 
 '''
-      ###Biggest integer that can be stored
+      ###Biggest integer that can be stored, depends on your computer
 u = 0b1111111111111111111111111111110
 #     1234567890123456789012345678901234567890
-u = 0x1afe
+#u = 0x1afe
 print("u is %r" % u)
 print("Type of u is %s" % type(u))
 print("u takes %d bytes in memory" % sys.getsizeof(u))
 '''
 
+'''
    ###Arithmetics with integers
+G = 21
+L = 526
+F = G + L 
+print("%d + %d = %r (%s)" % (G,L,F,type(F)))
 
-
-
-
+F = G-50 * L
+print("%d - 50* %d = %r (%s)" % (G,L,F,type(F)))
+'''
    
