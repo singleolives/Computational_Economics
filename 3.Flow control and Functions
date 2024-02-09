@@ -38,3 +38,19 @@ c = a if condition else b  # therefore this is possible
 '''
 
 ################### LOOPS ################
+
+for j in [0,1,2,3,4,5,6,7]:
+   print("A iteration %d" % j)
+print()
+
+for j in range(7):
+   print("B iteration %d" % j)
+print("    ")
+
+#list comprehension
+x = []
+for i in range(12):
+   if i % 3 == 0:                  #if 3 x is divisible by 3, we append a list and add every i
+      x.append("item %d" % i)
+print(x)
+
