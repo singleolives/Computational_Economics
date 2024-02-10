@@ -38,7 +38,7 @@ c = a if condition else b  # therefore this is possible
 '''
 
 ################### LOOPS ################
-
+'''
 for j in [0,1,2,3,4,5,6,7]:
    print("A iteration %d" % j)
 print()
@@ -53,4 +53,11 @@ for i in range(12):
    if i % 3 == 0:                  #if i is divisible by 3, we append a list and add every i
       x.append("item %d" % i)
 print(x)
+        ###Lets compact the same codeinto one line 
+
+w = ["item %d" % i for i in range(12) if i % 3 ==0]
+print(w)
+'''
+#----------------------------------------------         
+            # For-Else
 
