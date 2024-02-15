@@ -58,6 +58,18 @@ print(x)
 w = ["item %d" % i for i in range(12) if i % 3 ==0]
 print(w)
 '''
-#----------------------------------------------         
+#----------------------------------------------    
+'''     
             # For-Else
+###check if loop did not break
+y = 0
+for i in range(100):
+   if y > 17:
+      break
+   if i % 5 ==0:
+      y+=1
 
+else:
+   print("i went all the way up to %d"%i) #only runs if loop completed
+print("loop complete with y=%d i=%d"%(y,i))
+'''
